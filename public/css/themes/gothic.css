@@ -1,0 +1,35 @@
+/* Typora Gothic Theme (Classic Literary Serif) */
+body.theme-gothic {
+  --theme-bg: #fbfbf9;
+  --theme-surface: #f2f2ee;
+  --theme-surface-active: #e6e6e0;
+  --theme-text: #2c2b29;
+  --theme-heading: #1a1918;
+  --theme-border: #dcdcd4;
+  --theme-border-subtle: #eaeae4;
+  --theme-accent: #7c3aed;
+  --theme-accent-hover: #6d28d9;
+  --theme-link: #6d28d9;
+  --theme-strong: #111110;
+  --theme-quote-text: #595854;
+  --theme-quote-border: #9b9a94;
+  --theme-quote-bg: #f5f5f0;
+  --theme-table-header-bg: #eeeee8;
+  --theme-table-row-alt: #f7f7f4;
+  --theme-code-inline-bg: #eaeae4;
+  --theme-code-inline-text: #b91c1c;
+  --theme-code-block-bg: #292827;
+  --theme-code-header-bg: #201f1e;
+  --theme-code-header-text: #a8a7a0;
+  --theme-highlight-bg: #fef08a;
+  --theme-highlight-text: #1a1918;
+  --theme-math-bg: #f4f4ee;
+  --theme-sidebar-bg: #f4f4ee;
+  --theme-sidebar-border: #dcdcd4;
+  --theme-sidebar-text: #2c2b29;
+  --theme-sidebar-muted: #73726c;
+  --theme-status-bg: #eeeee8;
+  --theme-font: "Georgia", "Cambria", "Times New Roman", serif;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}

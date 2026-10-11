@@ -1,0 +1,35 @@
+/* Typora Newsprint Theme (Editorial Newspaper Style) */
+body.theme-newsprint {
+  --theme-bg: #f6f4f0;
+  --theme-surface: #ece8e1;
+  --theme-surface-active: #dfdad0;
+  --theme-text: #333333;
+  --theme-heading: #111111;
+  --theme-border: #d5d0c7;
+  --theme-border-subtle: #e5e0d7;
+  --theme-accent: #c2410c;
+  --theme-accent-hover: #9a3412;
+  --theme-link: #c2410c;
+  --theme-strong: #000000;
+  --theme-quote-text: #555555;
+  --theme-quote-border: #c2410c;
+  --theme-quote-bg: #ece8e1;
+  --theme-table-header-bg: #e6e2da;
+  --theme-table-row-alt: #f1ede6;
+  --theme-code-inline-bg: #e4dfd6;
+  --theme-code-inline-text: #991b1b;
+  --theme-code-block-bg: #2d2b28;
+  --theme-code-header-bg: #22201e;
+  --theme-code-header-text: #aba69e;
+  --theme-highlight-bg: #fed7aa;
+  --theme-highlight-text: #431407;
+  --theme-math-bg: #eee9e0;
+  --theme-sidebar-bg: #eeeae2;
+  --theme-sidebar-border: #d8d3c9;
+  --theme-sidebar-text: #2f2d29;
+  --theme-sidebar-muted: #6e6960;
+  --theme-status-bg: #e6e1d7;
+  --theme-font: "PT Serif", "Charter", "Georgia", serif;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}

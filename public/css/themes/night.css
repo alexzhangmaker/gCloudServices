@@ -1,0 +1,35 @@
+/* Typora Night Theme (Modern Dark Mode) */
+body.theme-night {
+  --theme-bg: #1e1e1e;
+  --theme-surface: #252526;
+  --theme-surface-active: #323233;
+  --theme-text: #d4d4d4;
+  --theme-heading: #f0f6fc;
+  --theme-border: #3c3c3c;
+  --theme-border-subtle: #2d2d2d;
+  --theme-accent: #3b82f6;
+  --theme-accent-hover: #60a5fa;
+  --theme-link: #58a6ff;
+  --theme-strong: #ffffff;
+  --theme-quote-text: #8b949e;
+  --theme-quote-border: #3b82f6;
+  --theme-quote-bg: rgba(59, 130, 246, 0.06);
+  --theme-table-header-bg: #2d2d2d;
+  --theme-table-row-alt: rgba(255, 255, 255, 0.02);
+  --theme-code-inline-bg: #2d3139;
+  --theme-code-inline-text: #f78166;
+  --theme-code-block-bg: #16181d;
+  --theme-code-header-bg: #111216;
+  --theme-code-header-text: #8b949e;
+  --theme-highlight-bg: #bb8009;
+  --theme-highlight-text: #ffffff;
+  --theme-math-bg: #252830;
+  --theme-sidebar-bg: #181818;
+  --theme-sidebar-border: #2c2c2c;
+  --theme-sidebar-text: #cccccc;
+  --theme-sidebar-muted: #858585;
+  --theme-status-bg: #181818;
+  --theme-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}

@@ -1,0 +1,35 @@
+/* Typora GitHub Theme (Classic Light) */
+body.theme-github {
+  --theme-bg: #ffffff;
+  --theme-surface: #f6f8fa;
+  --theme-surface-active: #eaeef2;
+  --theme-text: #24292f;
+  --theme-heading: #1f2328;
+  --theme-border: #d0d7de;
+  --theme-border-subtle: #eaeef2;
+  --theme-accent: #0969da;
+  --theme-accent-hover: #0856b3;
+  --theme-link: #0969da;
+  --theme-strong: #1f2328;
+  --theme-quote-text: #57606a;
+  --theme-quote-border: #d0d7de;
+  --theme-quote-bg: #f6f8fa;
+  --theme-table-header-bg: #f6f8fa;
+  --theme-table-row-alt: #fcfcfc;
+  --theme-code-inline-bg: rgba(175, 184, 193, 0.2);
+  --theme-code-inline-text: #cf222e;
+  --theme-code-block-bg: #24292e;
+  --theme-code-header-bg: #1f2328;
+  --theme-code-header-text: #8b949e;
+  --theme-highlight-bg: #fff8c5;
+  --theme-highlight-text: #24292e;
+  --theme-math-bg: #f8fafc;
+  --theme-sidebar-bg: #f6f8fa;
+  --theme-sidebar-border: #e1e4e8;
+  --theme-sidebar-text: #24292f;
+  --theme-sidebar-muted: #57606a;
+  --theme-status-bg: #f6f8fa;
+  --theme-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}

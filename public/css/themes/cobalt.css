@@ -1,0 +1,35 @@
+/* Typora Cobalt Theme (Deep Blue Night) */
+body.theme-cobalt {
+  --theme-bg: #15232d;
+  --theme-surface: #192d3b;
+  --theme-surface-active: #20394b;
+  --theme-text: #e2e8f0;
+  --theme-heading: #ffffff;
+  --theme-border: #234257;
+  --theme-border-subtle: #1c3546;
+  --theme-accent: #0088ff;
+  --theme-accent-hover: #38bdf8;
+  --theme-link: #38bdf8;
+  --theme-strong: #ffc600;
+  --theme-quote-text: #94a3b8;
+  --theme-quote-border: #ffc600;
+  --theme-quote-bg: rgba(255, 198, 0, 0.05);
+  --theme-table-header-bg: #1e3647;
+  --theme-table-row-alt: rgba(255, 255, 255, 0.02);
+  --theme-code-inline-bg: #1e3647;
+  --theme-code-inline-text: #ff9d00;
+  --theme-code-block-bg: #0f1922;
+  --theme-code-header-bg: #0b131a;
+  --theme-code-header-text: #7f9ba6;
+  --theme-highlight-bg: #eab308;
+  --theme-highlight-text: #000000;
+  --theme-math-bg: #182b38;
+  --theme-sidebar-bg: #101c24;
+  --theme-sidebar-border: #1e3647;
+  --theme-sidebar-text: #cbd5e1;
+  --theme-sidebar-muted: #64748b;
+  --theme-status-bg: #0f1a21;
+  --theme-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}

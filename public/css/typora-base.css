@@ -1,0 +1,311 @@
+/* Typora Base Markdown Typography & Core Layout */
+:root {
+  --typora-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --typora-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --typora-line-height: 1.68;
+}
+
+/* Base Typora Content Area */
+.typora-editor-content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 48px 120px 48px;
+  font-family: var(--theme-font, var(--typora-font-sans));
+  font-size: 16px;
+  line-height: var(--typora-line-height);
+  color: var(--theme-text);
+  background: transparent;
+  outline: none;
+  word-wrap: break-word;
+  transition: opacity 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .typora-editor-content {
+    padding: 20px 20px 100px 20px;
+  }
+}
+
+/* Headings */
+.typora-editor-content h1,
+.typora-editor-content h2,
+.typora-editor-content h3,
+.typora-editor-content h4,
+.typora-editor-content h5,
+.typora-editor-content h6 {
+  font-weight: 600;
+  line-height: 1.28;
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+  color: var(--theme-heading, var(--theme-text));
+  position: relative;
+}
+
+.typora-editor-content h1 {
+  font-size: 2.15em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid var(--theme-border-subtle, rgba(128, 128, 128, 0.2));
+  margin-top: 0.8em;
+}
+
+.typora-editor-content h2 {
+  font-size: 1.65em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--theme-border-subtle, rgba(128, 128, 128, 0.15));
+}
+
+.typora-editor-content h3 { font-size: 1.35em; }
+.typora-editor-content h4 { font-size: 1.15em; }
+.typora-editor-content h5 { font-size: 1.0em; }
+.typora-editor-content h6 { font-size: 0.9em; opacity: 0.8; }
+
+/* Paragraphs & Text */
+.typora-editor-content p {
+  margin-top: 0;
+  margin-bottom: 1.15em;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.typora-editor-content strong,
+.typora-editor-content b {
+  font-weight: 600;
+  color: var(--theme-strong, inherit);
+}
+
+.typora-editor-content em,
+.typora-editor-content i {
+  font-style: italic;
+}
+
+.typora-editor-content mark,
+.typora-editor-content .markdown-highlight {
+  background-color: var(--theme-highlight-bg, #fff3a8);
+  color: var(--theme-highlight-text, #24292e);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+.typora-editor-content del,
+.typora-editor-content s {
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+/* Links */
+.typora-editor-content a {
+  color: var(--theme-link, #0969da);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.typora-editor-content a:hover {
+  text-decoration: underline;
+}
+
+/* Blockquotes */
+.typora-editor-content blockquote {
+  margin: 1.2em 0;
+  padding: 0.5em 1.2em;
+  color: var(--theme-quote-text, #57606a);
+  border-left: 4px solid var(--theme-quote-border, #d0d7de);
+  background: var(--theme-quote-bg, rgba(128, 128, 128, 0.04));
+  border-radius: 0 4px 4px 0;
+}
+
+.typora-editor-content blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/* Lists */
+.typora-editor-content ul,
+.typora-editor-content ol {
+  padding-left: 2em;
+  margin-top: 0.4em;
+  margin-bottom: 1.15em;
+}
+
+.typora-editor-content li {
+  margin-bottom: 0.35em;
+}
+
+/* Task lists (Interactive Checkboxes) */
+.typora-editor-content ul.task-list,
+.typora-editor-content li.task-list-item {
+  list-style-type: none;
+}
+
+.typora-editor-content ul.task-list {
+  padding-left: 0.5em;
+}
+
+.typora-editor-content .task-list-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.typora-editor-content .task-list-item input[type="checkbox"] {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: var(--theme-accent, #0969da);
+  transform: translateY(2px);
+}
+
+.typora-editor-content .task-list-item.checked {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
+/* Tables */
+.typora-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.4em 0;
+}
+
+.typora-editor-content table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.95em;
+}
+
+.typora-editor-content th,
+.typora-editor-content td {
+  padding: 10px 14px;
+  border: 1px solid var(--theme-border, #d0d7de);
+}
+
+.typora-editor-content th {
+  font-weight: 600;
+  background-color: var(--theme-table-header-bg, #f6f8fa);
+}
+
+.typora-editor-content tr:nth-child(even) td {
+  background-color: var(--theme-table-row-alt, rgba(128, 128, 128, 0.03));
+}
+
+/* Inline Code */
+.typora-editor-content code:not(pre code) {
+  font-family: var(--typora-font-mono);
+  font-size: 0.88em;
+  padding: 0.2em 0.45em;
+  margin: 0 0.15em;
+  background-color: var(--theme-code-inline-bg, rgba(175, 184, 193, 0.2));
+  border-radius: 4px;
+  color: var(--theme-code-inline-text, #bf3989);
+}
+
+/* Code Blocks */
+.typora-code-block-wrapper {
+  position: relative;
+  margin: 1.4em 0;
+  border-radius: 6px;
+  background-color: var(--theme-code-block-bg, #1f2428);
+  border: 1px solid var(--theme-border-subtle, rgba(128, 128, 128, 0.15));
+  overflow: hidden;
+}
+
+.typora-code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 14px;
+  background-color: var(--theme-code-header-bg, rgba(0, 0, 0, 0.2));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: var(--typora-font-mono);
+  font-size: 12px;
+  color: var(--theme-code-header-text, #8b949e);
+  user-select: none;
+}
+
+.typora-code-copy-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  color: #c9d1d9;
+  padding: 2px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.typora-code-copy-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.typora-editor-content pre {
+  margin: 0;
+  padding: 14px 16px;
+  overflow-x: auto;
+  font-family: var(--typora-font-mono);
+  font-size: 13.5px;
+  line-height: 1.5;
+  background: transparent !important;
+}
+
+.typora-editor-content pre code {
+  font-family: var(--typora-font-mono);
+  background: transparent !important;
+  padding: 0;
+  border: none;
+  font-size: inherit;
+}
+
+/* Math (KaTeX) */
+.typora-math-block {
+  margin: 1.5em 0;
+  padding: 12px 16px;
+  overflow-x: auto;
+  text-align: center;
+  background: var(--theme-math-bg, rgba(128, 128, 128, 0.03));
+  border-radius: 6px;
+  border: 1px solid var(--theme-border-subtle, transparent);
+}
+
+.katex-display {
+  margin: 0 !important;
+}
+
+/* Horizontal Rule */
+.typora-editor-content hr {
+  height: 2px;
+  padding: 0;
+  margin: 2em 0;
+  background-color: var(--theme-border, #d0d7de);
+  border: 0;
+}
+
+/* Images */
+.typora-editor-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1em 0;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Typora Focus Mode */
+body.focus-mode .typora-editor-content > *:not(.focused-element) {
+  opacity: 0.22;
+  filter: blur(0.2px);
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+body.focus-mode .typora-editor-content > *.focused-element {
+  opacity: 1.0;
+  filter: none;
+}
+
+/* Typora Typewriter Mode indicator */
+body.typewriter-mode .typora-editor-content {
+  padding-top: 38vh;
+  padding-bottom: 50vh;
+}
